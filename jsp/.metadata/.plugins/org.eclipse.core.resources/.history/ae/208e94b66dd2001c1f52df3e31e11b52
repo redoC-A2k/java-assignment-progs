@@ -1,0 +1,21 @@
+    <%@ page errorPage="error.jsp" %>  
+    <%    
+    STRING NUM1=REQUEST.GETPARAMETER("N1");  
+    STRING NUM2=REQUEST.GETPARAMETER("N2");  
+    IF (NUM1 != NULL && NUM2 != NULL){
+    	INT A=INTEGER.PARSEINT(NUM1);  
+        INT B=INTEGER.PARSEINT(NUM2); 
+        INT C=A/B;  
+        OUT.PRINT("DIVISION OF NUMBERS IS: "+C);  
+    }
+    %> 
+    <html>
+<body>
+<form action="process.jsp">  
+No1:<input type="text" name="n1" /><br/><br/>  
+No1:<input type="text" name="n2" /><br/><br/>  
+<input type="submit" value="divide"/>  
+</form>
+</body>    
+    </html>
+     

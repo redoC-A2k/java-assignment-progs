@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/afshan/SEM-6/advanced-java/java_assignment_progs/jsp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1257929349.index
+/AutoRefresh/src/main/java

@@ -1,0 +1,23 @@
+<%@ page import="java.io.*,java.util.*" %>
+        <%
+        	session.setAttribute("name","user");
+        %>
+<html>
+    <head>
+        <title>Session Tracking</title>
+    </head>
+    <body>
+        <center>
+            <h1>Session Tracking Example</h1>
+        </center>
+
+        <form>
+        	Your name = <input type="text" name="myname">
+        	<input type="submit">
+        </form>
+        <%
+        	session.setAttribute("name",request.getParameter("myname").toString());
+        %>
+        <h2> hello <%= (String)session.getAttribute("name") %> </h2>
+    </body>
+</html>
